@@ -1,26 +1,37 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+body {
+  padding: 3vh 10vw;
+  background-image: url("/bg-main-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+:root {
+  --bg-color: #191826;
+  --cl-cyan: #66e2dc;
+  --cl-orange: #fa7453;
+  --cl-yellow: #ffb964;
+  --bg-theme: white;
+}
+
+@media screen and (max-width: 1225px) {
   body {
-    color: white;
-    background: black;
+    padding: 3vh 2vw;
+    background-image: url("/bg-main-tablet.png");
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    padding: 2vw 0px;
+    background-image: url("/bg-main-mobile.png");
   }
 }

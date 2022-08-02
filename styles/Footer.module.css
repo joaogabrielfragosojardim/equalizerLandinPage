@@ -1,0 +1,39 @@
+.containerFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.containerFooter b {
+  font-weight: 700;
+}
+
+.containerSocial {
+  align-self: center;
+}
+
+.containerSocial div {
+  display: flex;
+  gap: 20px;
+}
+
+.containerSocial svg {
+  color: var(--bg-color);
+  transition: 0.5s;
+}
+
+.containerSocial svg:hover {
+  color: var(--cl-orange);
+}
+
+@media screen and (max-width: 650px) {
+  .containerFooter {
+    padding: 10px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .containerSocial {
+    align-self: start;
+  }
+}
